@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/99fbab6f1d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'features.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'estiloUser.css'%}">
+
+    <title>Page User</title>
+    </style>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-2 navegacao">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Info Cripto</a>
+
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row me-1">
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link text-white" href="#">
+              <i class="fas fa-envelope mx-1"></i> Contact
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user mx-1"></i> Profile
+            </a>
+            <!-- Dropdown menu -->
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="container my-5">
+
+    </div>
+    <div class="nav-scroller py-1 mt-5">
+      <nav class="nav d-flex justify-content-between mt-2">
+        <a class="p-2 link-primary" href="https://t.co/eL8HNFWxrK" target="_blank">Ethereum</a>
+        <a class="p-2 link-primary" href="https://cardanofoundation.org" target="_blank">Cardano</a>
+        <a class="p-2 link-primary" href="https://solana.com/" target="_blank">Solana</a>
+        <a class="p-2 link-primary" href="https://polkadot.network" target="_blank">Polkador</a>
+        <a class="p-2 link-primary" href="https://polygon.technology" target="_blank">Polygon</a>
+        <a class="p-2 link-primary" href="https://chain.link" target="_blank">Chainlink</a>
+        <a class="p-2 link-primary" href="https://blog.uniswap.org" target="_blank">Uniswap</a>
+        <a class="p-2 link-primary" href="https://https://t.co/foKG3v5VuE" target="_blank">White Paper</a>
+        <a class="p-2 link-primary" href="https://https://t.co/fQa15XWIQ6" target="_blank">Cosmos Blockchain</a>
+        <a class="p-2 link-primary" href="https://support.opensea.io" target="_blank">Opensea</a>
+        <a class="p-2 link-primary" href="https://https://t.co/aEalRVdbm4" target="_blank">Arbitrum</a>
+      </nav>
+    </div>
+
+    <div class="p-4 p-md-5 mb-4 text-white rounded card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" 
+    style="background-image: url('{% static 'img/bitcoin-img.webp' %}')">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">Bitcoin</h1>
+        <p class="lead my-3">Primeira criptomoeda, baseada em blockchain, descentralizada e segura.</p>
+        <p class="lead mb-0"><a href="https://bitcoin.org/pt_BR/" class="text-white fw-bold">Conheça mais</a></p>
+        <p class="lead my-3">Descubra o poder do Bitcoin, a primeira criptomoeda a utilizar a tecnologia blockchain. Com sua natureza descentralizada e segurança robusta, o Bitcoin está transformando a maneira como fazemos transações financeiras. Explore o mundo das criptomoedas e embarque nessa revolução digital com confiança.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <p>
+                O Bitcoin &#xE9; uma das criptomoedas mais conhecidas e populares do mundo. Foi introduzido em 2009 por um indiv&#xED;duo ou grupo de pessoas conhecido como Satoshi Nakamoto. O Bitcoin trouxe consigo uma tecnologia revolucion&#xE1;ria chamada blockchain, que &#xE9; a base do seu funcionamento e tem o potencial de transformar a forma como realizamos transa&#xE7;&#xF5;es financeiras.
+              </p>
+              <p>
+                A blockchain do Bitcoin &#xE9; um livro-raz&#xE3;o p&#xFA;blico descentralizado que registra todas as transa&#xE7;&#xF5;es realizadas na rede. Ela &#xE9; composta por uma s&#xE9;rie de blocos, onde cada bloco cont&#xE9;m um conjunto de transa&#xE7;&#xF5;es. Cada bloco na blockchain possui um identificador &#xFA;nico chamado de hash, que &#xE9; um c&#xF3;digo alfanum&#xE9;rico gerado a partir dos dados do bloco.
+              </p>
+              <p>
+                Uma das caracter&#xED;sticas mais importantes da blockchain do Bitcoin &#xE9; a descentraliza&#xE7;&#xE3;o. Ao contr&#xE1;rio de sistemas financeiros tradicionais que s&#xE3;o controlados por uma &#xFA;nica autoridade central, como um banco central, a blockchain do Bitcoin &#xE9; mantida por uma rede de n&#xF3;s distribu&#xED;dos ao redor do mundo. Esses n&#xF3;s s&#xE3;o computadores conectados &#xE0; rede Bitcoin que validam transa&#xE7;&#xF5;es e mant&#xEA;m uma c&#xF3;pia completa da blockchain.
+              </p>
+            </div>
+      
+            <div class="col-auto d-none d-lg-block max-width-md">
+              <img
+                      src="{% static 'img/img-para-texto.avif'%}"
+                      alt="Bootstrap"
+                      width="100%"
+                      height="100%"
+                      class=""
+                    />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+              <img
+                      src="{% static 'img/img-para-texto2.webp'%}"
+                      alt="Bootstrap"
+                      width="600"
+                      height="650"
+                      class=""
+                    />
+            </div>
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <p>
+                Quando uma transa&#xE7;&#xE3;o &#xE9; iniciada na rede Bitcoin, ela &#xE9; transmitida para todos os n&#xF3;s que, por sua vez, a validam. Os n&#xF3;s coletam um conjunto de transa&#xE7;&#xF5;es v&#xE1;lidas e as agrupam em um bloco. Antes de adicionar um bloco &#xE0; blockchain, os n&#xF3;s devem resolver um problema matem&#xE1;tico complexo conhecido como prova de trabalho. Esse processo envolve encontrar um valor chamado nonce que, quando combinado com outros dados do bloco, gera um hash com determinadas caracter&#xED;sticas.
+              </p>
+              <p>
+                A resolu&#xE7;&#xE3;o do problema de prova de trabalho exige poder computacional, o que significa que os n&#xF3;s precisam dedicar recursos para encontrar a solu&#xE7;&#xE3;o. Isso &#xE9; conhecido como minera&#xE7;&#xE3;o. O primeiro n&#xF3; a encontrar a solu&#xE7;&#xE3;o para o problema de prova de trabalho tem o direito de adicionar o novo bloco &#xE0; blockchain e &#xE9; recompensado com uma certa quantidade de bitcoins rec&#xE9;m-criados. Esse mecanismo incentiva os participantes da rede a contribu&#xED;rem com seu poder computacional para manter a seguran&#xE7;a e a integridade da blockchain do Bitcoin.
+              </p>
+              <p>
+                Uma vez que um bloco &#xE9; adicionado &#xE0; blockchain, ele se torna parte permanente do registro hist&#xF3;rico de transa&#xE7;&#xF5;es. Cada bloco cont&#xE9;m o hash do bloco anterior, o que cria uma conex&#xE3;o criptogr&#xE1;fica entre os blocos. Isso garante que qualquer altera&#xE7;&#xE3;o em um bloco exigiria a modifica&#xE7;&#xE3;o de todos os blocos subsequentes, tornando praticamente imposs&#xED;vel alterar as transa&#xE7;&#xF5;es passadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <p>
+                A seguran&#xE7;a da blockchain do Bitcoin tamb&#xE9;m &#xE9; garantida por meio do uso de criptografia. Cada transa&#xE7;&#xE3;o &#xE9; assinada digitalmente com uma chave privada, que s&#xF3; pode ser gerada pelo propriet&#xE1;rio das moedas. A chave p&#xFA;blica correspondente &#xE9; usada para verificar a autenticidade da assinatura. Isso garante que apenas o propriet&#xE1;rio real das moedas possa gast&#xE1;-las e evita o risco de falsifica&#xE7;&#xE3;o ou duplica&#xE7;&#xE3;o.
+              </p>
+              <p>
+                Al&#xE9;m disso, a blockchain do Bitcoin oferece uma certa dose de privacidade. Embora todas as transa&#xE7;&#xF5;es sejam registradas na blockchain e sejam vis&#xED;veis publicamente, as identidades dos usu&#xE1;rios s&#xE3;o protegidas por pseud&#xF4;nimos. Os endere&#xE7;os Bitcoin s&#xE3;o cadeias de caracteres alfanum&#xE9;ricos que n&#xE3;o est&#xE3;o diretamente vinculados &#xE0;s identidades reais das pessoas. Isso torna dif&#xED;cil associar uma transa&#xE7;&#xE3;o a uma pessoa espec&#xED;fica, fornecendo um certo n&#xED;vel de anonimato.
+              </p>
+              <p>
+                A blockchain do Bitcoin continua a evoluir com o tempo. Uma das mudan&#xE7;as mais significativas foi a implementa&#xE7;&#xE3;o de uma solu&#xE7;&#xE3;o conhecida como Segregated Witness (SegWit), que alterou a forma como as transa&#xE7;&#xF5;es s&#xE3;o registradas na blockchain, permitindo uma maior capacidade de transa&#xE7;&#xF5;es e reduzindo as taxas.
+              </p>
+            </div>
+      
+            <div class="col-auto d-none d-lg-block">
+              <img
+                      src="{% static 'img/img-para-texto3.jpg'%}"
+                      alt="Bootstrap"
+                      width="500"
+                      height="100%"
+                      class=""
+                    />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+              <img
+                      src="{% static 'img/img-para-texto4.jpg'%}"
+                      alt="Bootstrap"
+                      width="450"
+                      height="100%"
+                      class=""
+                    />
+            </div>
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <p>
+                No entanto, a blockchain do Bitcoin enfrenta desafios, como a escalabilidade. Devido ao seu tamanho crescente, a blockchain do Bitcoin requer recursos computacionais significativos para operar e pode ter tempos de confirma&#xE7;&#xE3;o de transa&#xE7;&#xE3;o mais longos em per&#xED;odos de congestionamento da rede.
+              </p>
+              <p>
+                Apesar desses desafios, o Bitcoin e sua blockchain continuam a despertar interesse e impulsionar a inova&#xE7;&#xE3;o. A moeda digital ganhou aceita&#xE7;&#xE3;o em muitos setores e &#xE9; considerada por alguns como uma reserva de valor semelhante ao ouro. Al&#xE9;m disso, a tecnologia blockchain do Bitcoin serviu de inspira&#xE7;&#xE3;o para o desenvolvimento de v&#xE1;rias outras criptomoedas e projetos baseados em blockchain.
+              </p>
+              <p>
+                Em resumo, o Bitcoin &#xE9; uma criptomoeda revolucion&#xE1;ria que utiliza a tecnologia blockchain descentralizada para registrar transa&#xE7;&#xF5;es de forma segura e transparente. A minera&#xE7;&#xE3;o, a prova de trabalho e a criptografia s&#xE3;o os pilares fundamentais que garantem a confiabilidade e a integridade da rede. O Bitcoin continua a desafiar as normas financeiras tradicionais e a abrir caminho para um novo paradigma de transa&#xE7;&#xF5;es financeiras digitais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide w-25 h-50 mx-auto text-center mt-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{% static 'img/bitcoin.jpeg'%}"
+            class="d-block w-100 h-50"
+            alt="Bitcoin"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{% static 'img/ethereum.jpeg'%}"
+            class="d-block w-100 h-50"
+            alt="Bitcoin"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{% static 'img/cripto.jpeg'%}"
+            class="d-block w-100 h-50"
+            alt="Bitcoin"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('{% static 'img/img-cardano-fundo.jpg' %}')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px #000067;">
+                A blockchain da Cardano é uma rede descentralizada que registra transações e valida blocos usando um protocolo de consenso baseado em prova de participação (PoS).
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="{% static 'img/cardano-png.png'%}"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('{% static 'img/img-fundo-solana.webp' %}')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-shadow: 2px 2px 4px #000067;">
+                A blockchain da Solana é uma rede de alto desempenho que usa uma arquitetura escalável e um mecanismo de consenso de prova de histórico (PoH).
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="{% static 'img/solana-png.png'%}"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg back-img"
+            style="background-image: url('{% static 'img/fundo-polkadot.webp' %}')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold " style="text-shadow: 2px 2px 4px #000067;">
+                A blockchain da Polkadot é uma plataforma de múltiplas correntes que conecta diferentes blockchains para facilitar a interoperabilidade e compartilhamento de dados.
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="{% static 'img/Polkadot-PNG.png'%}"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">IA, EUA, SEC e Gary Gensler</h3>
+              <div class="mb-1 text-muted">10 junho 2023</div>
+              <p class="card-text mb-auto">Senadores dos EUA propõem novas leis para regulamentar inteligência artificial (IA).</p>
+              <a href="https://br.beincrypto.com/ia-eua-sec-e-gary-gensler-nas-noticias-da-manha-bom-dia-cripto/" class="stretched-link" target="_blank">Continue lendo</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                    src="{% static 'img/img-news.avif'%}"
+                    alt="Bootstrap"
+                    width="300px"
+                    height="300px"
+                  />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">CPI das criptomoedas</h3>
+              <div class="mb-1 text-muted">21/05/2023</div>
+              <p class="mb-auto">polêmicas em nova ferramenta da Ledger, carteira virtual, e a aprovação da CPI das criptomoedas no Brasil.</p>
+              <a href="https://www.moneytimes.com.br/cpi-das-criptomoedas-e-ledger-5-noticias-que-sacudiram-a-semana-no-mundo-cripto/" class="stretched-link" target="_blank">Continue lendo</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                    src="{% static 'img/img-news2.avif'%}"
+                    alt="Bootstrap"
+                    width="300px"
+                    height="300px"
+                  />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">Fim do inverno cripto</h3>
+              <div class="mb-1 text-muted">06 Junho 2023</div>
+              <p class="card-text mb-auto">o que você precisa saber para entrar de vez no mercado e acompanhar o seu crescimento</p>
+              <a href="https://www.segs.com.br/mais/economia/376821-fim-do-inverno-cripto-o-que-voce-precisa-saber-para-entrar-de-vez-no-mercado" class="stretched-link">Continue lendo</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                    src="{% static 'img/img-news3.jpg'%}"
+                    alt="Bootstrap"
+                    width="300px"
+                    height="300px"
+                  />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">Artista mais famoso do mundo cripto</h3>
+              <div class="mb-1 text-muted">20 maio, 2023</div>
+              <p class="mb-auto">Famoso artista digital Beeple entra em confusão com Bitboy</p>
+              <a href="" class="stretched-link">Continue lendo</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                    src="{% static 'img/img-news4.avif'%}"
+                    alt="Bootstrap"
+                    width="300px"
+                    height="300px"
+                  />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright: Info Cripto
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

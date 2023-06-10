@@ -1,0 +1,185 @@
+body{
+    margin:0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1280px;
+    background-color: rgb(226, 224, 224);
+ }
+
+ 
+ img{
+    width: 130px;
+    height: 90px;
+    border-radius: 5%;
+}
+
+ header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(28, 28, 31);
+    height: 90px;
+
+ }
+ li{
+    display: inline-block;
+    margin: 60px;
+    margin-top: 40px;
+   
+ }
+ h1{
+    
+    text-align: center;
+    color: royalblue;
+ }
+ h2{
+    padding-left: 40px;
+    color: rgb(152, 5, 5);
+ }
+
+.menu{
+    color: white;
+    transition: 0.3s all;
+    
+}
+
+ .menu:hover{
+    border: 2px solid  royalblue;
+    padding: 10px;
+    border-radius: 15px;
+ }
+.menu:hover{
+    background-color: royalblue ;
+    color: white;
+ }
+
+.texto{
+    padding-left: 30px;
+    padding-right: 30px;
+   text-align: justify;
+   text-indent: 20px;
+}
+
+#texto2{
+    padding-left: 30px;
+    padding-right: 30px;
+   text-align: justify;
+   text-indent: 20px;
+}
+
+#imagem{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30%;
+    width: 500px;
+    height: 500px;
+    border-radius: 0%;
+}
+#imagem1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30%;
+    width: 500px;
+    height: 300px;
+    border-radius: 0;
+}
+
+#imagem2{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    width: 800px;
+    height: 500px;
+
+}
+.formulario h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3{
+    padding-left: 40px;
+    color: red;
+}
+  
+form {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+   
+}
+input{
+    margin-top: 10px;
+    height: 15px;
+    padding: 15px;
+    border-radius: 20px;
+
+ 
+}
+
+#rodape{
+    margin-right: 100px;
+}
+
+#rodape:hover{
+    background-color: rebeccapurple;
+    color: white;
+    margin-right: 100px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:black;
+    margin-top: 50px;
+    color: white;
+}
+
+footer{
+    padding-top: 50px;
+   
+}
+
+.layout{
+    text-align: center;
+}
+#imagem-sobre{
+    width: 200px;
+    height: 200px;
+}
+#formulario-contato{
+   margin-left: 50%;
+}
+.contato a{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #f14130;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.contato a:hover{
+    background: #2c3550;
+}
+
+.contato a i{
+    transition: 00.4s;
+}
+
+.contato a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
+#formulario-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}

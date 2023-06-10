@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'estiloLogin.css'%}"
+    />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="{% static 'img/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDMvZGE0ZGNkNWEtMWQ3MS00YWM3LWE3OWYtZTdjNWFiYTczZmI0LmpwZw==.jpg'%}"
+        />
+      </div>
+
+      <ul>
+        <a class="menu" href="../../"><li>Home</li></a>
+
+        <a class="menu" href="../../sobre"><li>Sobre</li></a>
+
+        <a class="menu" href="../../contato"><li>Contato</li></a>
+
+        <a class="menu" href="../login"><li>Login</li></a>
+      </ul>
+    </header>
+
+    <div class="contaner" style="margin-top: 30px">
+      <center>
+        <h1 class="text-info">Cadastre-se Aqui</h1>
+      </center>
+    </div>
+
+    <div class="container w-25" style="margin-top: 30px">
+      <form action="{% url 'cadastro' %}" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nome de Usuário</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="usuario"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="senha"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <script>
+      function exibirAlerta(mensagem) {
+        alert(mensagem);
+      }
+    </script>
+
+    {% if mensagem_erro %}
+    <script>
+      exibirAlerta("{{ mensagem_erro }}");
+    </script>
+    {% endif %}
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
