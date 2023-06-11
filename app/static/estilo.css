@@ -5,6 +5,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1280px;
     background-color: rgb(226, 224, 224);
+    
  }
 
  
@@ -12,8 +13,8 @@ body{
     width: 130px;
     height: 90px;
     border-radius: 5%;
-}
-
+   
+ }
  header{
     display: flex;
     flex-direction: row;

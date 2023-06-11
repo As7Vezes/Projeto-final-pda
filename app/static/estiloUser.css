@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Phudu:wght@500&family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(235, 245, 243);
+    font-size: 20px;
+}
+
+a {
+    padding-top: 5px;
+  text-decoration: none;
+}   
+
+.navegacao {
+    background: rgb(65, 105, 225);
+}
