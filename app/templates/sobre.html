@@ -1,41 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-{% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Cripto/Sobre</title>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/99fbab6f1d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'estilo.css'%}">
 
-<body>
-    <header>
-        <div id="logo">
-            <img
-                src="{% static 'img/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDMvZGE0ZGNkNWEtMWQ3MS00YWM3LWE3OWYtZTdjNWFiYTczZmI0LmpwZw==.jpg'%}">
-        </div>
+    <link rel="stylesheet" type="text/css" href="{% static 'features.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'estiloUser.css'%}">
 
-        <ul>
-            <a class="menu" href="../"><li>Home</li></a>
-              
-            <a class="menu" href="../sobre"><li>Sobre</li></a>
-                
-            <a class="menu"  href="../contato"><li>Contato</li></a>
+    <title>Sobre</title>
+    </style>
 
-            <a class="menu" href="../auth/login"><li>Login</li></a>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-2 navegacao">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Info Cripto</a>
 
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="../">
+                  <i class="fas fa-home mx-1"></i> Home
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="../sobre">
+                  <i class="fas fa-info-circle mx-1"></i> Sobre
+                </a>
+              </li>
+            <li class="nav-item dropdown">
+                <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >
+                <i class="fas fa-user mx-1"></i> Profile
+                </a>
+                <!-- Dropdown menu -->
+                <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                >
+                <li>
+                    <a class="dropdown-item" href="../auth/login">Login</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="../auth/cadastro">Cadastrar</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </li>
+                </ul>
+            </li>
         </ul>
-    </header>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="container my-5">
 
-    <main class="layout">
-        <h1>
-            Quem somos
-        </h1>
-        <img id=imagem-sobre src="{% static 'img/Dorian-Nakamoto.jpg'%}">
-        <section id="texto2">
-            <p>
-                somos uma empresa que se preocupa com a falta de instru&#xE7;&#xE3;o e o mal entendimento das pessoas com rela&#xE7;&#xE3;o
+    </div>
+    <div class="nav-scroller py-1 mt-5">
+      <nav class="nav d-flex justify-content-between mt-2">
+        <a class="p-2 link-primary" href="https://t.co/eL8HNFWxrK" target="_blank">Ethereum</a>
+        <a class="p-2 link-primary" href="https://cardanofoundation.org" target="_blank">Cardano</a>
+        <a class="p-2 link-primary" href="https://solana.com/" target="_blank">Solana</a>
+        <a class="p-2 link-primary" href="https://polkadot.network" target="_blank">Polkador</a>
+        <a class="p-2 link-primary" href="https://polygon.technology" target="_blank">Polygon</a>
+        <a class="p-2 link-primary" href="https://chain.link" target="_blank">Chainlink</a>
+        <a class="p-2 link-primary" href="https://blog.uniswap.org" target="_blank">Uniswap</a>
+        <a class="p-2 link-primary" href="https://https://t.co/foKG3v5VuE" target="_blank">White Paper</a>
+        <a class="p-2 link-primary" href="https://https://t.co/fQa15XWIQ6" target="_blank">Cosmos Blockchain</a>
+        <a class="p-2 link-primary" href="https://support.opensea.io" target="_blank">Opensea</a>
+        <a class="p-2 link-primary" href="https://https://t.co/aEalRVdbm4" target="_blank">Arbitrum</a>
+      </nav>
+    </div>
+
+    
+    <div class="container my-5">
+        <h1 class="text-primary my-5" >Quem somos</h1>
+        <p>
+            somos uma empresa que se preocupa com a falta de instru&#xE7;&#xE3;o e o mal entendimento das pessoas com rela&#xE7;&#xE3;o
                 ao
                 mundo das criptomedas, as diferentes tipos de blockchains, e aplica&#xE7;&#xF5;es descentralizadas existentes
                 nesse
@@ -44,38 +106,71 @@
                 trazer maior entendimento para as pessoas que procuram estudar o mundo das blockchains e suas aplica&#xE7;&#xF5;es
                 no
                 nosso dia a dia.
-
-            </p>
-        </section>
-
-        <section id="texto2">
-            <p>
-                Nossa empresa tem o compromisso de levar educa&#xE7;&#xE3;o financeira e de trazer as informa&#xE7;&#xF5;es mais relevantes
+        </p>
+        <p>
+            Nossa empresa tem o compromisso de levar educa&#xE7;&#xE3;o financeira e de trazer as informa&#xE7;&#xF5;es mais relevantes
                 e que possam de alguma forma
                 auxiliar todos que querem estar por dentro das principais informa&#xE7;&#xF5;es dentro do mercado cripto e suas
                 aplica&#xE7;&#xF5;es que diariamente sofrem atualiza&#xE7;&#xF5;es e est&#xE3;o em constante aperfei&#xE7;oamento.
-            </p>
+        </p>
+
+        <img
+                      src="{% static 'img/Dorian-Nakamoto.jpg'%}"
+                      alt="Bootstrap"
+                      width="500px"
+                      height="500px"
+                      class="my-5"
+                    />
+    </div>
+
+
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+           <!-- Facebook -->
+           <a
+           class="btn text-white btn-floating m-1"
+           style="background-color: #3b5998;"
+           href="https://pt-br.facebook.com/ethereum.br/"
+           role="button" target="_blank"
+           ><i class="fab fa-facebook-f"></i
+         ></a>
+   
+         <!-- Twitter -->
+         <a
+           class="btn text-white btn-floating m-1"
+           style="background-color: #55acee;"
+           href="https://mobile.twitter.com/ethereum_brasil"
+           role="button" target="_blank"
+           ><i class="fab fa-twitter"></i
+         ></a>
+
+         <!-- Instagram -->
+           <a
+           class="btn text-white btn-floating m-1"
+           style="background-color: #ac2bac;"
+           href="https://www.instagram.com/ethereum.brasil/"
+           role="button" target="_blank"
+           ><i class="fab fa-instagram"></i
+           ></a>
         </section>
-
-
-
-
-
-    </main>
-
-
-
-
-
-
-    <footer>
-        <p>Copyright 2022 - Info Cripto</p>
-        <p>Site desenvolvido na aula de programa&#xE7;&#xE3;o do PDA.</p>
-        <a id ="rodape" href="https://programadoresdoamanha.org/" target="_blank"><li>Site PDA</li></a>
-       
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright: Info Cripto
+      </div>
+      <!-- Copyright -->
     </footer>
 
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,38 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-{% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Cripto</title>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/99fbab6f1d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'estilo.css'%}">
-</head>
 
-<body>
-    <header>
-        <div id="logo">
-            <img
-                src="{% static 'img/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDMvZGE0ZGNkNWEtMWQ3MS00YWM3LWE3OWYtZTdjNWFiYTczZmI0LmpwZw==.jpg'%}">
-        </div>
+    <link rel="stylesheet" type="text/css" href="{% static 'features.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'estiloUser.css'%}">
 
-        <ul>
-            <a class="menu" href="../"><li>Home</li></a>
+    <title>Home</title>
+    </style>
 
-            <a class="menu" href="../sobre"><li>Sobre</li></a>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-2 navegacao">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Info Cripto</a>
 
-            <a class="menu" href="../contato"><li>Contato</li></a>
-
-            <a class="menu" href="../auth/login"><li>Login</li></a>
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="../">
+                  <i class="fas fa-home mx-1"></i> Home
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="../sobre">
+                  <i class="fas fa-info-circle mx-1"></i> Sobre
+                </a>
+              </li>
+            <li class="nav-item dropdown">
+                <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >
+                <i class="fas fa-user mx-1"></i> Profile
+                </a>
+                <!-- Dropdown menu -->
+                <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+                >
+                <li>
+                    <a class="dropdown-item" href="../auth/login">Login</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="../auth/cadastro">Cadastrar</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </li>
+                </ul>
+            </li>
         </ul>
-    </header>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="container my-5">
 
-    <main>
-        <h1> Blockchain da Ethereum</h1>
-        <h2>Como funciona?</h2>
-        <section class="texto">
-            <p>Primeiro precisamos entender o conceito de blockchain,que nada mais &#xE9; que uma corrente de blocos
+    </div>
+    <div class="nav-scroller py-1 mt-5">
+      <nav class="nav d-flex justify-content-between mt-2">
+        <a class="p-2 link-primary" href="https://t.co/eL8HNFWxrK" target="_blank">Ethereum</a>
+        <a class="p-2 link-primary" href="https://cardanofoundation.org" target="_blank">Cardano</a>
+        <a class="p-2 link-primary" href="https://solana.com/" target="_blank">Solana</a>
+        <a class="p-2 link-primary" href="https://polkadot.network" target="_blank">Polkador</a>
+        <a class="p-2 link-primary" href="https://polygon.technology" target="_blank">Polygon</a>
+        <a class="p-2 link-primary" href="https://chain.link" target="_blank">Chainlink</a>
+        <a class="p-2 link-primary" href="https://blog.uniswap.org" target="_blank">Uniswap</a>
+        <a class="p-2 link-primary" href="https://https://t.co/foKG3v5VuE" target="_blank">White Paper</a>
+        <a class="p-2 link-primary" href="https://https://t.co/fQa15XWIQ6" target="_blank">Cosmos Blockchain</a>
+        <a class="p-2 link-primary" href="https://support.opensea.io" target="_blank">Opensea</a>
+        <a class="p-2 link-primary" href="https://https://t.co/aEalRVdbm4" target="_blank">Arbitrum</a>
+      </nav>
+    </div>
+
+    <div class="p-4 p-md-5 mb-4 text-white rounded card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" 
+    style="background-image: url('{% static 'img/img-banner-home2.jpeg' %}')">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">Ethereum</h1>
+        <p class="lead my-3">Ethereum é uma plataforma de blockchain que permite contratos inteligentes e aplicativos descentralizados.</p>
+        <p class="lead mb-0"><a target="_blank" href="https://ethereum.foundation/" class="text-white fw-bold">Conheça mais</a></p>
+        <p class="lead my-3">Ethereum é uma plataforma de blockchain que permite criar e executar contratos inteligentes, além de suportar o desenvolvimento de aplicativos descentralizados e tokens criptográficos.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static lead" style="max-width: ">
+              <p>
+                Primeiro precisamos entender o conceito de blockchain,que nada mais &#xE9; que uma corrente de blocos
                 interligados
                 uns aos outros,fazendo com que para executar uma mudan&#xE7;a em um determinado bloco seja necess&#xE1;rio que
                 voc&#xEA;
@@ -41,32 +118,49 @@
                 seja em blockchains que usam algoritimos de consenso de prova de trabalho ou prova de travamento de
                 tokens
                 para vali&#xE7;&#xE3;o da rede.
-            </p>
-        </section>
-
-        <section class="texto">
-            <p>Na valida&#xE7;&#xE3;o da rede por meio da prova de trabalho, para conseguir fazer altera&#xE7;&#xF5;es nos blocos &#xE9;
+              </p>
+              <p>
+                Na valida&#xE7;&#xE3;o da rede por meio da prova de trabalho, para conseguir fazer altera&#xE7;&#xF5;es nos blocos &#xE9;
                 necess&#xE1;rio
                 que voc&#xEA; tenha mais de 50% da for&#xE7;a computacional da rede,podendo variar esse percentual de acordo com a
                 blockchain.
-            </p>
-        </section>
-        <article>
-         <img id=imagem1 src="{% static 'img/ethereum-cientistas.jpg'%}">
-        </article>
-
-
-        <section class="texto">
-            <p>Na valida&#xE7;&#xE3;o da rede por meio de prova de travamento de tokens como &#xE9; o caso da blockchain da
+              </p>
+              <p>
+                Na valida&#xE7;&#xE3;o da rede por meio de prova de travamento de tokens como &#xE9; o caso da blockchain da
                 Ethereum,para conseguir fazer altera&#xE7;&#xF5;es nos blocos &#xE9; necess&#xE1;rio
                 que voc&#xEA; tenha mais de dois ter&#xE7;os dos tokens travados na rede sendo um validador,ou seja voc&#xEA; precisa
                 ter
                 dois ter&#xE7;os dos nodes de valida&#xE7;&#xE3;o para conseguir alterar dados dentro da blockchain da Ethereum.
-            </p>
-        </section>
-
-        <section class="texto">
-            <p>Agora com uma no&#xE7;&#xE3;o de que blockchain &#xE9; na verdade um grande livro cont&#xE1;bil e de que as inform&#xE7;&#xF5;es
+              </p>
+            </div>
+      
+            <div class="col-auto d-none d-lg-block max-width-md">
+              <img
+                      src="{% static 'img/ethereum-cientistas.jpg'%}"
+                      alt="Bootstrap"
+                      width="500px"
+                      height="500px"
+                      class=""
+                    />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+              <img
+                      src="{% static 'img/ethereum-como-funciona.png'%}"
+                      alt="Bootstrap"
+                      width="600"
+                      height="650"
+                      class=""
+                    />
+            </div>
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <p>
+                Agora com uma no&#xE7;&#xE3;o de que blockchain &#xE9; na verdade um grande livro cont&#xE1;bil e de que as inform&#xE7;&#xF5;es
                 adicinadas
                 nesse grande computador descentralizado, e que tem sua seguran&#xE7;a mantida pelos pr&#xF3;prios &#xFA;suarios que
                 mantem
@@ -74,14 +168,9 @@
                 rede segura seja disponibilizando for&#xE7;a computacional a rede ou aderindo ao stake travando seus tokens e
                 se
                 tornando nodes e portanto validadores da rede.
-            </p>
-        </section>
-        <article>
-         <img id=imagem src="{% static 'img/ethereum-como-funciona.png'%}">
-        </article>
-
-        <section class="texto">
-            <p>Partindo agora para explicar a forma com que a blockchain da Ethereum funciona, como vimos antes existem
+              </p>
+              <p>
+                Partindo agora para explicar a forma com que a blockchain da Ethereum funciona, como vimos antes existem
                 de
                 forma mais simplificada, dois tipos de se manter uma blockchain em opera&#xE7;&#xE3;o e em seguran&#xE7;a,que &#xE9; por
                 meio de
@@ -97,35 +186,40 @@
                 totalmente diferente de qualquer coisa que vimos antes; que s&#xE3;o os contratos inteligentes que permitem
                 que
                 sejam criados aplica&#xE7;&#xF5;es dentro da blockchain da Ethereum de forma an&#xF4;nima e descentralizada.
-            </p>
-        </section>
-        <article>
-            <img id=imagem2 src="{% static 'img/ethereum-piramide.png'%}">
-        </article>
-        <section class="texto">
-            <p>Os contratos inteligentes s&#xE3;o literalmente linhas de c&#xF3;digo que podem ser adicionadas a blochain da
-                Ethereum,
-                para prover aplica&#xE7;&#xF5;es demandadas por usu&#xE1;rios da rede,seja uma forma de criar ferramentas para cria&#xE7;&#xE3;o
-                de
-                tokens n&#xE3;o fung&#xED;veis que s&#xE1;o uma nova forma de garantir a posse e a veracidade de alguma informa&#xE7;&#xE3;o, j&#xE1;
-                que
-                um token n&#xE3;o fung&#xED;vel n&#xE3;o pode ser copiado ou falsificado pois possue caracter&#xED;sticas que fazem dele
-                &#xFA;nico,
-                e os tokens n&#xE3;o fung&#xED;veis podem ser a nova forma de garantir informa&#xE7;&#xF5;es de posse por exemplo de ativos
-                financeiros; Os contratos inteligentes tamb&#xE9;m s&#xE3;o usados para cria&#xE7;&#xE3;o de aplica&#xE7;&#xF5;es financeiras
-                descentralizadas como &#xE9; o caso da Uniswap que &#xE9; nos dias atuais a maior aplica&#xE7;&#xE3;o financeira
-                descentralizada
-                da rede ethereum, e o servi&#xE7;o prestado pela uniswap a seus usu&#xE1;rios &#xE9; de forma geral o mesmo servi&#xE7;o
-                ofercido por uma corretora,por&#xE9;m com a diferen&#xE7;a de que voc&#xEA; n&#xE3;o precisa passar por toda burocracia de
-                entrega de documentos, dados pessoais e demontra&#xE7;&#xF5;es financeiras, e mesmo assim podendo ter o pedido de
-                abertura de conta negado,j&#xE1; na uniswap voc&#xEA; n&#xE3;o passa por nada disso e tamb&#xE9;m n&#xE3;o &#xE9; barrado de utilizar
-                a
-                aplica&#xE7;&#xE3;o financeira oferecida pela uniswap.
-            </p>
-        </section>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <section class="texto">
-            <p>
+      <div class="container my-5">
+        <p>
+            Os contratos inteligentes s&#xE3;o literalmente linhas de c&#xF3;digo que podem ser adicionadas a blochain da
+            Ethereum,
+            para prover aplica&#xE7;&#xF5;es demandadas por usu&#xE1;rios da rede,seja uma forma de criar ferramentas para cria&#xE7;&#xE3;o
+            de
+            tokens n&#xE3;o fung&#xED;veis que s&#xE1;o uma nova forma de garantir a posse e a veracidade de alguma informa&#xE7;&#xE3;o, j&#xE1;
+            que
+            um token n&#xE3;o fung&#xED;vel n&#xE3;o pode ser copiado ou falsificado pois possue caracter&#xED;sticas que fazem dele
+            &#xFA;nico,
+            e os tokens n&#xE3;o fung&#xED;veis podem ser a nova forma de garantir informa&#xE7;&#xF5;es de posse por exemplo de ativos
+            financeiros; Os contratos inteligentes tamb&#xE9;m s&#xE3;o usados para cria&#xE7;&#xE3;o de aplica&#xE7;&#xF5;es financeiras
+            descentralizadas como &#xE9; o caso da Uniswap que &#xE9; nos dias atuais a maior aplica&#xE7;&#xE3;o financeira
+            descentralizada
+            da rede ethereum, e o servi&#xE7;o prestado pela uniswap a seus usu&#xE1;rios &#xE9; de forma geral o mesmo servi&#xE7;o
+            ofercido por uma corretora,por&#xE9;m com a diferen&#xE7;a de que voc&#xEA; n&#xE3;o precisa passar por toda burocracia de
+            entrega de documentos, dados pessoais e demontra&#xE7;&#xF5;es financeiras, e mesmo assim podendo ter o pedido de
+            abertura de conta negado,j&#xE1; na uniswap voc&#xEA; n&#xE3;o passa por nada disso e tamb&#xE9;m n&#xE3;o &#xE9; barrado de utilizar
+            a
+            aplica&#xE7;&#xE3;o financeira oferecida pela uniswap.
+          </p>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <p>
                 Podemos falar de forma simploria e resumida que a blockchain da ethereum &#xE9; um grande computador
                 descentralizado, que funciona por meio de softwares rodados em m&#xE1;quinas ao redor do globo que mantem
                 todas
@@ -142,37 +236,70 @@
                 valida&#xE7;&#xE3;o s&#xE3;o criados, adicionando assim mais seguran&#xE7;a para rede e mantendo todo o bom funcionamento
                 desse
                 ecossistem descentralizado.
-            </p>
+              </p>
+            </div>
+      
+            <div class="col-auto d-none d-lg-block">
+              <img
+                      src="{% static 'img/ethereum-piramide.png'%}"
+                      alt="Bootstrap"
+                      width="600"
+                      height="500"
+                      class=""
+                    />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="https://pt-br.facebook.com/ethereum.br/"
+            role="button" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee;"
+            href="https://mobile.twitter.com/ethereum_brasil"
+            role="button" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="https://www.instagram.com/ethereum.brasil/"
+            role="button" target="_blank"
+            ><i class="fab fa-instagram"></i
+            ></a>
         </section>
-
-        <section class="formulario">
-            <h2>
-                J&#xE1; pensou em receber informa&#xE7;&#xF5;es sobre o Mundo Cripto todos os dias?
-            </h2>
-            <h3>
-                Se inscreva na nossa Newslatter!!
-            </h3>
-            <form>
-
-                <input type="text" placeholder="Nome" />
-                <input type="email" placeholder="E-mail" />
-                <input type="submit" value="Enviar>">
-
-
-            </form>
-        </section>
-    </main>
-
-    <footer>
-
-        <p>Copyright 2022 - Info Cripto</p>
-        <p>Site desenvolvido na aula de programa&#xE7;&#xE3;o do PDA.</p>
-        <a id ="rodape" href="https://programadoresdoamanha.org/" target="_blank"><li>Site PDA</li></a>
-
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright: Info Cripto
+      </div>
+      <!-- Copyright -->
     </footer>
 
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

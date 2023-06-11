@@ -50,7 +50,7 @@ def login(request):
 
         if user:
             login_django(request, user)
-            return redirect('home')
+            return redirect('usuario')
         else:
             mensagem_erro = 'Email ou senha inválidos'
             return render(request, 'login.html', {'mensagem_erro': mensagem_erro})
