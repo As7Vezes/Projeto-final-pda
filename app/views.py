@@ -55,6 +55,7 @@ def login(request):
             mensagem_erro = 'Email ou senha inválidos'
             return render(request, 'login.html', {'mensagem_erro': mensagem_erro})
         
+@login_required
 def user(request):
     return render (request, 'usuario.html')
 
